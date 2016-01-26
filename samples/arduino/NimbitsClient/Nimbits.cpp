@@ -257,7 +257,7 @@ String Nimbits::login(String email, String password) {
 
       }
 
-      _authToken = root["token"];
+      _authToken = (const char*)root["token"];
 
   }
   else {
